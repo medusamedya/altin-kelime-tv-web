@@ -1,6 +1,9 @@
 import { AnimatedStats } from "@/components/animated-stats";
 import { Ecosystem } from "@/components/ecosystem";
+import { GameSystem } from "@/components/game-system";
 import { Hero } from "@/components/hero"
+import { SeasonStructure } from "@/components/season-structure";
+import { WhyAltinKelime } from "@/components/why-altin-kelime";
 
 
 import type { Metadata } from "next"
@@ -16,6 +19,9 @@ export default function Home() {
           <Hero />
           <AnimatedStats /> 
           <Ecosystem />
+          <WhyAltinKelime />
+          <GameSystem />
+          <SeasonStructure />
       </main>
   );
 }
