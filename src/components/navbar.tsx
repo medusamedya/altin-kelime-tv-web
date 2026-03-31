@@ -12,7 +12,7 @@ import Link from "next/link"
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/format", label: "Format" },
-  { href: "/how-to-play", label: "Prodüksiyon" },
+  { href: "/production", label: "Prodüksiyon" },
   { href: "/apply", label: "Ekip" },
   { href: "/format", label: "Galeri" },
   { href: "/format", label: "Sponsorluk" },
