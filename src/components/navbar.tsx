@@ -11,10 +11,11 @@ import Link from "next/link"
 // LİNKLER GÜNCELLENDİ (Başına / eklendi ve about rotası düzeltildi)
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
-  { href: "/about", label: "Altın Kelime Nedir?" },
-  { href: "/how-to-play", label: "Nasıl Oynanır?" },
-  { href: "/apply", label: "Yarışmacı Ol" },
   { href: "/format", label: "Format" },
+  { href: "/how-to-play", label: "Prodüksiyon" },
+  { href: "/apply", label: "Ekip" },
+  { href: "/format", label: "Galeri" },
+  { href: "/format", label: "Sponsorluk" },
   { href: "/#contact", label: "İletişim" },
 ]
 
