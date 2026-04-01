@@ -21,12 +21,12 @@ export async function sendContactEmail(formData: FormData) {
 
     // Resend ile mail gönderme işlemi (data ve error'u ayrı yakalıyoruz)
     const { data, error } = await resend.emails.send({
-      from: "Altın Kelime Web <onboarding@resend.dev>",
+      from: "Altın Kelime TV Web <onboarding@resend.dev>",
       to: "medusaglobalcomtr@gmail.com",
       replyTo: email as string,
       subject: `Yeni İletişim Formu: ${subject || brand}`,
       html: `
-        <h2>Altın Kelime Web Sitesinden Yeni Mesaj!</h2>
+        <h2>Altın Kelime TV Web Sitesinden Yeni Mesaj!</h2>
         <p><strong>İsim:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Marka:</strong> ${brand}</p>
