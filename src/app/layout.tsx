@@ -5,6 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ScrollToTop } from '@/components/scroll-to-top'
 import { Footer } from '@/components/footer' 
+
 const inter = Inter({ 
   subsets: ["latin"],
   variable: '--font-inter'
@@ -17,27 +18,34 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  // --- YENİ EKLENEN: Sitenin Kök Adresi (Canonical URL Hesaplaması İçin Şart) ---
-  metadataBase: new URL('https://altinkelime.com'),
+  // 1. Kök Adres (Canonical ve OG resimleri için şart)
+  metadataBase: new URL('https://altinkelime.tv'),
 
-  // 1. Standart SEO (Google İçin)
+  // 2. Standart SEO (Google İçin)
   title: 'Altın Kelime | 7 Harf – 1 Dakika – 1 Kazanan',
   description: 'Kelime bilgisi, strateji ve rekabetin birleştiği yeni nesil televizyon yarışması. Türkiye\'nin en heyecanlı kelime oyunu.',
   
-  // --- YENİ EKLENEN: Canonical URL (Google'a Asıl Linki Gösterir) ---
+  // 3. Canonical URL (Google'a Asıl Linki Gösterir)
   alternates: {
     canonical: '/',
   },
 
-  // 2. Open Graph (WhatsApp, Facebook, LinkedIn İçin Kapak)
+  // 4. Favicon ve İkonlar
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png', // public klasörüne atacağın 180x180px logo
+  },
+
+  // 5. Open Graph (WhatsApp, Facebook, LinkedIn İçin Kapak)
   openGraph: {
     title: 'Altın Kelime | Türkiye\'nin En Zorlu Kelime Arenası',
     description: 'Kelime bilgisi, strateji ve rekabetin birleştiği yeni nesil televizyon yarışması.',
-    url: 'https://altinkelime.com',
+    url: 'https://altinkelime.tv',
     siteName: 'Altın Kelime',
+    // metadataBase tanımlı olduğu için linki kısa yazıyoruz, Next.js otomatik https://altinkelime.tv/images/studio.jpg yapıyor
     images: [
       {
-        url: 'https://altinkelime.com/images/studio.jpg', // Kapak fotoğrafı olarak stüdyo görselini çekecek
+        url: '/images/studio.jpg', 
         width: 1200,
         height: 630,
         alt: 'Altın Kelime Stüdyosu',
@@ -47,12 +55,18 @@ export const metadata: Metadata = {
     type: 'website',
   },
 
-  // 3. Twitter Card (Twitter/X Paylaşımları İçin Büyük Kapak)
+  // 6. Twitter Card (Twitter/X Paylaşımları İçin Büyük Kapak)
   twitter: {
     card: 'summary_large_image',
     title: 'Altın Kelime | 7 Harf – 1 Dakika',
     description: 'Türkiye\'nin en zorlu kelime arenasına katılın.',
-    images: ['https://altinkelime.com/images/studio.jpg'],
+    images: ['/images/studio.jpg'],
+  },
+
+  // 7. Arama Motoru İzinleri (Google Botlarının siteyi taramasına izin verir)
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
