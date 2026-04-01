@@ -16,7 +16,7 @@ const navLinks = [
   { href: "/apply", label: "Ekip" },
   { href: "/format", label: "Galeri" },
   { href: "/format", label: "Sponsorluk" },
-  { href: "/#contact", label: "İletişim" },
+  { href: "/contact", label: "İletişim" },
 ]
 
 export function Navbar() {
