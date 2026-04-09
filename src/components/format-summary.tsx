@@ -12,7 +12,7 @@ const summaryCards = [
   {
     icon: <Clock className="w-6 h-6 text-primary" strokeWidth={1.5} />,
     label: "Bölüm Süresi",
-    value: "45-60 Dakika"
+    value: "60-90 Dakika"
   },
   {
     icon: <Users className="w-6 h-6 text-primary" strokeWidth={1.5} />,
@@ -37,7 +37,6 @@ const summaryCards = [
 ]
 
 const bottomStats = [
-  { label: "Çekim Kapasitesi", value: "Günde 3-5 bölüm" },
   { label: "Dil Uyumu", value: "Tüm dillere uyarlanabilir" },
   { label: "Kelime Kaynağı", value: "TDK Sözlüğü" }
 ]

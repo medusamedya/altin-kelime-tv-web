@@ -12,10 +12,10 @@ import Link from "next/link"
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/format", label: "Format" },
-  { href: "/production", label: "Prodüksiyon" },
-  { href: "/apply", label: "Ekip" },
+ //{ href: "/production", label: "Prodüksiyon" },
+  //{ href: "/apply", label: "Ekip" },
   { href: "/format", label: "Galeri" },
-  { href: "/format", label: "Sponsorluk" },
+  //{ href: "/format", label: "Sponsorluk" },
   { href: "/contact", label: "İletişim" },
 ]
 
