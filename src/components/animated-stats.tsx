@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 
 // VERİLER İSTEDİĞİN GİBİ TAM VE DOĞRU SIRAYLA EKLENDİ
 const statsData = [
-  { label: "Dakika / Bölüm", prefix: "45-", val: 60, suffix: "" },
+  { label: "Dakika / Bölüm", prefix: "60-", val: 90, suffix: "" },
   { label: "Yarışmacı", prefix: "", val: 5, suffix: "" },
   { label: "Harf Sistemi", prefix: "", val: 7, suffix: "" },
   { label: "Bölüm / Çekim Günü", prefix: "3-", val: 5, suffix: "" },
