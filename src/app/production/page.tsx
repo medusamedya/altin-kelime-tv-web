@@ -17,6 +17,12 @@ import { ProductionChecklist } from "@/components/production-checklist"
 import { LiveGameSystem } from "@/components/live-game-system"
 import { ProducerAdvantages } from "@/components/producer-advantages"
 import { AudioProduction } from "@/components/audio-production"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Prodüksiyon ve Stüdyo | Altın Kelime",
+  description: "Altın Kelime'nin teknik altyapısı, 360 derece stüdyo tasarımı, LED ekran entegrasyonları ve yenilikçi yayın teknolojileri.",
+}
 
 
 export default function ProductionPage() {

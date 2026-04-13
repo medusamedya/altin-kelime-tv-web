@@ -20,6 +20,12 @@ import { RewardSystem } from "@/components/reward-system"
 import { SeasonHierarchy } from "@/components/season-hierarchy"
 import { FormatBible } from "@/components/format-bible"
 import { UseCases } from "@/components/use-cases"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Format Özellikleri ve Oyun Mekaniği | Altın Kelime",
+  description: "Altın Kelime yarışma formatının oyun mekaniği, sezon yapısı, strateji kartları, ödül hiyerarşisi ve Format Bible detayları.",
+}
 
 export default function FormatPage() {
   return (
