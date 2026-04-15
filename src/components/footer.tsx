@@ -146,26 +146,29 @@ export function Footer() {
         </div>
 
         {/* 4. Newsletter (Bülten) Şeridi */}
-        <div className="rounded-3xl border border-primary/10 bg-card/40 backdrop-blur-md p-8 md:p-10 mb-16 flex flex-col md:row lg:flex-row items-center justify-between gap-8 shadow-2xl">
-          <div className="max-w-xl">
-            <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="w-5 h-5 text-primary animate-pulse" />
-              <span className="text-primary text-xs font-black tracking-widest uppercase">VIP Bülten</span>
-            </div>
-            <h5 className="text-foreground font-black text-2xl mb-2 tracking-tight">İlk sezondan siz haberdar olun</h5>
-            <p className="text-muted-foreground text-sm font-medium leading-relaxed">Yayın tarihleri, yarışmacı seçmeleri ve stüdyodan özel kesintiler e-postanıza gelsin.</p>
-          </div>
-          <div className="flex gap-3 w-full lg:w-auto shrink-0">
-            <input 
-              type="email" 
-              placeholder="E-posta adresiniz"
-              className="flex-1 lg:w-64 px-5 py-4 rounded-2xl bg-background border border-border focus:border-primary focus:ring-0 outline-none transition-all text-sm font-medium" 
-            />
-            <button className="gold-bg px-8 py-4 rounded-2xl font-black text-sm text-[#1A1A2E] shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
-              Kayıt Ol
-            </button>
-          </div>
-        </div>
+        <div className="rounded-3xl border border-primary/10 bg-card/40 backdrop-blur-md p-8 md:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl">
+  <div className="max-w-xl w-full">
+    <div className="flex items-center gap-2 mb-3">
+      <Sparkles className="w-5 h-5 text-primary animate-pulse" />
+      <span className="text-primary text-xs font-black tracking-widest uppercase">VIP Bülten</span>
+    </div>
+    <h5 className="text-foreground font-black text-2xl mb-2 tracking-tight">İlk sezondan siz haberdar olun</h5>
+    <p className="text-muted-foreground text-sm font-medium leading-relaxed">Yayın tarihleri, yarışmacı seçmeleri ve stüdyodan özel kesintiler e-postanıza gelsin.</p>
+  </div>
+  
+  {/* DEĞİŞİKLİK BURADA: flex-col ve sm:flex-row eklendi. */}
+  <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
+    <input 
+      type="email" 
+      placeholder="E-posta adresiniz"
+      className="flex-1 w-full lg:w-64 px-5 py-4 rounded-2xl bg-background border border-border focus:border-primary focus:ring-0 outline-none transition-all text-sm font-medium" 
+    />
+    {/* BUTONA w-full sm:w-auto eklendi: Mobilde tam genişlikte, masaüstünde içeriği kadar yer kaplar */}
+    <button className="gold-bg w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm text-[#1A1A2E] shadow-xl shadow-primary/20 hover:scale-105 transition-transform flex items-center justify-center">
+      Kayıt Ol
+    </button>
+  </div>
+</div>
 
         {/* 5. Alt Bilgi & Copyright */}
         <div className="pt-10 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-6">
