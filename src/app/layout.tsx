@@ -82,7 +82,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <body className={`${inter.variable} ${montserrat.variable} font-sans antialiased bg-background text-foreground`}>
+      <body className={`${inter.variable} ${montserrat.variable} font-sans antialiased bg-background text-foreground`} suppressHydrationWarning>
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -104,7 +104,6 @@ export default function RootLayout({
             <main className="flex-1 flex flex-col">
               {children}
             </main>
-            <Footer />
             <ScrollToTop />
           </div>
         </ThemeProvider>
