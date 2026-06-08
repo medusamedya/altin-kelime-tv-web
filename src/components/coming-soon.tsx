@@ -277,19 +277,6 @@ export default function ComingSoon() {
             ))}
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', padding: '32px 24px 0', flexWrap: 'wrap' }}>
-            {[
-              { num: "12", text: "Kamera" },
-              { num: "4K", text: "UHD Yayın" },
-              { num: "3–5", text: "Bölüm / Gün" },
-              { num: "360°", text: "Marka Deneyimi" }
-            ].map((stat, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
-                <p style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '32px', color: 'var(--gold)', lineHeight: 1 }}>{stat.num}</p>
-                <p style={{ fontSize: '10px', letterSpacing: '3px', color: 'var(--text-muted)', textTransform: 'uppercase' }}>{stat.text}</p>
-              </div>
-            ))}
-          </div>
         </section>
 
         <footer className="footer">
