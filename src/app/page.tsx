@@ -1,6 +1,7 @@
 import { AnimatedStats } from "@/components/animated-stats";
 import { AudienceExperience } from "@/components/audience-experience";
 import { BroadcastSchedule } from "@/components/broadcast-schedule";
+import ComingSoon from "@/components/coming-soon";
 import { Ecosystem } from "@/components/ecosystem";
 import { FinalCTA } from "@/components/final-cta";
 import { FormatBible } from "@/components/format-bible";
@@ -26,23 +27,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
       <main className="min-h-screen bg-background">
-          <Hero />
-          <AnimatedStats /> 
-          <Ecosystem />
-          <WhyAltinKelime />
-          <GameSystem />
-          <ProgressionSystem />
-          <RewardSystem />
-          <AudienceExperience />
-          <StrategyCards />
-          <ProductionSection />
-          <StudioGallery />
           
-          <BroadcastSchedule />
-          <TeamSection />
-          <SponsorshipCTA />
-          <FormatBible />
-          <FinalCTA />
+          <ComingSoon />
       </main>
   );
 }
