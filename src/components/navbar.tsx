@@ -11,12 +11,12 @@ import Link from "next/link"
 // LİNKLER GÜNCELLENDİ (Başına / eklendi ve about rotası düzeltildi)
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
-  { href: "/format", label: "Format" },
+  { href: "/", label: "Format" },
  //{ href: "/production", label: "Prodüksiyon" },
   //{ href: "/apply", label: "Ekip" },
-  { href: "/format", label: "Galeri" },
+  { href: "/", label: "Galeri" },
   //{ href: "/format", label: "Sponsorluk" },
-  { href: "/contact", label: "İletişim" },
+  { href: "/", label: "İletişim" },
 ]
 
 export function Navbar() {
